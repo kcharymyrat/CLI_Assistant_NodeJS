@@ -1,0 +1,32 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>Quite often, developers are encountered using command line arguments. For example, we can recall the following command <code class="java">npm install -D nodemon</code>, where the <code class="java">-D</code> argument indicates that we want to keep the nodemon package as a development dependency. As another example, consider the <code class="java">npm -h</code> command, where using the <code class="java">-h</code> or <code class="java">--help</code> arguments allows you to list all the commands that you can run using the npm keyword.</p>
+<p>We are faced with the task of creating our own CLI, which will add new functionality to us. Regardless of the specific logic of our CLI, we must be able to process command line arguments. For now, we will not specify what exactly we can do with our CLI, let it remain a mystery until the next stage. At this step, you need to create a program that will allow you to process different types of command line arguments and output them in the processed form to the console.</p>
+<ol>
+</ol>
+<h5 id="objectives">Objectives</h5>
+<p>Before reading the following rules for processing command line arguments, please take a look at the examples, they can give you more information about the general structure than the text!</p>
+<p>In our case, the following rules for processing command line arguments will apply:</p>
+<ol>
+<li>If the command line argument is passed with a single dash, then you need to print the value of the argument without a dash and write the value <code class="java">true</code> through the colon, as indicated in the first example below.</li>
+<li>If a command line argument is passed with two dashes but no <code class="java">=</code> sign, then it is similarly matched with true. After that, the value of the parameter and the word <code class="java">true</code> should be output to the console through a colon, as in the second example.</li>
+<li>If the command line argument is passed using two dashes and simultaneously with a <code class="java">=</code> sign, then instead of the word true, this argument is matched with the value to the right of the equal sign. Check out the third example!</li>
+<li>In the event that you passed a command line argument with an equal sign and any number of dashes, but did not give a value to the right of the equal sign, then the following text should be displayed in the console: "It seems you forget to specify argument!". Look at example number four.</li>
+</ol>
+<p>Your program must be able to:</p>
+<ul>
+<li>Receive command line arguments for further processing;</li>
+<li>Process arguments according to the rules described above;</li>
+</ul>
+<p>In order for the second point to become more understandable, you should first look at the examples, and then re-read the task again. Sometimes it's better to show something than to describe it!</p>
+<h5 id="examples">Examples</h5>
+<p><strong>Example 1: </strong><em>example of output to the console when using the command <code class="java">node ./main.js -h</code></em></p>
+<p><img alt="" height="67" name="image.png" src="https://ucarecdn.com/17f22b90-5371-4766-9a4a-40642988b41e/" width="541"/></p>
+<p><strong>Example 2: </strong><em>example of output to the console when using the command <code class="java">node ./main.js --help -t</code></em></p>
+<p><img alt="" height="93" name="image.png" src="https://ucarecdn.com/d65158af-55ed-4935-b7bc-01de491635d8/" width="627"/></p>
+<p><strong>Example 3: </strong><em>example of output to the console when using the command <code class="java">node ./main.js -p --save=false --interactive</code></em></p>
+<p><img alt="" height="131" name="image.png" src="https://ucarecdn.com/fed637aa-fb8e-45b9-a2f1-60b35e6e3284/" width="907"/></p>
+<p><strong>Example 4: </strong><em>example of output to the console when using the command <code class="java">node .\main.js --save=</code></em></p>
+<p><img alt="" height="65" name="image.png" src="https://ucarecdn.com/5bbc47c8-fcb8-49ae-a16f-caaa32772d58/" width="600"/></p>
+
+</div>

@@ -1,0 +1,6 @@
+type: framework
+content:
+  - Argument handling
+  - Basic CLI functionality
+  - Developer functionality
+current_task: 0

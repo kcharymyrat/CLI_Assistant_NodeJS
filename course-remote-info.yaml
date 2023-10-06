@@ -1,0 +1,102 @@
+hyperskill_project:
+  id: 384
+  ide_files: https://cogniterra.org/media/attachments/lesson/32478/additional_files.json
+  is_template_based: false
+  use_ide: true
+update_date: "Fri, 06 Oct 2023 01:24:31 UTC"
+stages:
+  - id: 2287
+    step: 35497
+    is_completed: true
+  - id: 2288
+    step: 35498
+    is_completed: false
+  - id: 2289
+    step: 35499
+    is_completed: false
+topics:
+  0:
+    - title: Introduction to Node.js
+      theory_id: 12691
+    - title: Global objects
+      theory_id: 29038
+    - title: Command line overview
+      theory_id: 8977
+    - title: Parameters and Options
+      theory_id: 9746
+    - title: World Wide Web
+      theory_id: 6633
+    - title: HyperText Transfer Protocol
+      theory_id: 6569
+    - title: Comments
+      theory_id: 8170
+    - title: What is module?
+      theory_id: 26523
+    - title: CommonJS modules
+      theory_id: 23897
+    - title: ECMAScript modules
+      theory_id: 27792
+    - title: Running Node.JS code
+      theory_id: 23880
+    - title: Process object
+      theory_id: 29449
+    - title: Web development
+      theory_id: 13931
+    - title: Introduction to JavaScript
+      theory_id: 8016
+    - title: Overview of the basic program
+      theory_id: 8154
+    - title: Multi-line programs
+      theory_id: 8162
+    - title: Variables
+      theory_id: 8186
+    - title: Strings and numbers
+      theory_id: 8194
+    - title: Arithmetic operators
+      theory_id: 8372
+    - title: Functions
+      theory_id: 8388
+    - title: Defining functions
+      theory_id: 24012
+    - title: Anonymous Function
+      theory_id: 26924
+    - title: Arrow Functions
+      theory_id: 8455
+    - title: Introduction to Arrays
+      theory_id: 16141
+    - title: Array creation
+      theory_id: 16356
+    - title: Modules
+      theory_id: 9963
+    - title: Object methods and keyword "this"
+      theory_id: 8715
+    - title: ForEach method
+      theory_id: 10133
+  1:
+    - title: JSON
+      theory_id: 6854
+    - title: Introduction to Objects
+      theory_id: 8588
+    - title: Null and Undefined
+      theory_id: 8564
+    - title: Boolean and Logical Operators
+      theory_id: 8471
+    - title: Type Conversion
+      theory_id: 8380
+    - title: Comparison Operators
+      theory_id: 8580
+    - title: Conditional Operators
+      theory_id: 8889
+    - title: Introduction to Promises
+      theory_id: 9980
+    - title: "\"then\", \"catch\" and \"finally\" methods"
+      theory_id: 9989
+    - title: Introduction to fs module
+      theory_id: 25757
+    - title: Fs promises
+      theory_id: 25868
+  2:
+    - title: Design principles
+      theory_id: 8956
+    - title: Single Responsibility Principle
+      theory_id: 8963

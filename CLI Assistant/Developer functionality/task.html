@@ -1,0 +1,22 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>You have implemented quite a lot of functionality! Let's add even more useful features to make it easier for us to use our CLI assistant.</p>
+<p>Suppose we have files with no extension, it would be convenient to check if they are directories or not. It is also quite convenient to find out the size of files in kilobytes without using a graphical tool, and even more convenient to find out the size of not one file, but several files at once! Using the Node.js API, you can make the most diverse functionality, I remind you that all information about all methods can be found in the documentation!</p>
+<h5 id="objectives">Objectives</h5>
+<p>At this stage, our CLI should provide the following functionality:</p>
+<ol>
+<li>When passing the <code class="java">--isFolder=name</code> argument, the CLI should tell if something called <code class="java">name</code> is a directory or a file, note the first example.</li>
+<li>In order to find out the size of one or more files, the CLI must process the <code class="java">--size=first_name-second_name-...</code> argument, where the file names are separated by a <code class="java">-</code>. If you want to know the size of a single file, you can pass the name of a single file as a parameter. The specified functionality is shown in the second example.</li>
+<li>If, when using the <code class="java">--isFolder</code> or <code class="java">--size</code> arguments, a folder or file name is passed that does not exist, then the special text specified in the third example should be displayed</li>
+<li>The last but not least argument is <code class="java">--content</code>, which prints the contents of the directory to the console, as indicated in the forth example.</li>
+</ol>
+<h5 id="examples">Examples</h5>
+<p><strong>Example 1: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --isFolder=images</code> and <code class="java">node ./main.js --isFolder=data.txt</code></em></p>
+<p><img alt="" height="126" name="image.png" src="https://ucarecdn.com/dc8c3578-f824-4ecf-b676-99329dcb4174/" width="753"/></p>
+<p><strong>Example 2: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --size=data.txt-other_data.txt</code> and <code class="java">node ./main.js --size=data.txt</code></em></p>
+<p><img alt="" height="131" name="image.png" src="https://ucarecdn.com/d00fbfb7-a8b1-475f-a163-375d521491aa/" width="905"/></p>
+<p><strong>Example 3: </strong><em>example of output to the console when using the command <code class="java">node ./main.js --isFolder=fake</code> and <code class="java">node ./main.js --size=fake.txt</code> when <code class="java">fake</code> folder and <code class="java">fake.txt</code> file don't exist</em></p>
+<p><img alt="" height="156" name="image.png" src="https://ucarecdn.com/3651c863-2b96-4d42-be69-393886606ddb/" width="878"/></p>
+<p><strong> Example 4: </strong><em>example of output to the console when using the command <code class="java">node ./main.js --content</code></em></p>
+<p><img alt="" height="91" name="image.png" src="https://ucarecdn.com/680a22b3-a09e-4cc8-9d2e-8f03ac44f6de/" width="627"/></p>
+</div>

@@ -1,0 +1,22 @@
+<div class="step-text">
+<h5 id="description">Description</h5>
+<p>After we were able to process numerous combinations of command line arguments, it is worth moving on to the specific logic of our CLI. Usually, Node.js is presented as a tool to help developers create the backend of sites, which is true. But Node.js also provides a powerful API for working with the file system, of particular interest is the fs (file system) module, which is described in detail in the Node.js documentation.</p>
+<p>We will create a CLI that will help us manipulate files using command line arguments, as well as get some data about the status of files / directories.</p>
+<h5 id="objectives">Objectives</h5>
+<p>At this stage, our CLI should provide the following functionality:</p>
+<ol>
+<li>When passing the <code class="java">--exist=filename</code> argument, the CLI should provide information about the presence or absence of the file. In the first example, the text of the message is indicated, which should be output to the console with a correct and incorrect file name</li>
+<li>If the argument <code class="java">--create=foldername</code> is passed, then a folder with the name <code class="java">foldername</code> that you passed as a parameter should be created in the project. The functionality that allows you to create folders and subfolders should also be available, then the argument is as follows <code class="java">--create=foldername/subfoldername</code>. Look at the second example.</li>
+<li>If we were able to create folders, then it is logical that we should be able to delete them. Passing the argument <code class="java">--remove=foldername</code> or <code class="java">--remove=foldername/subfoldername</code> should remove folders from the directory, pay attention to the third example</li>
+<li>If you want to delete a file that doesn't exist, then you need to print a special message to the console, as shown in the fourth example.</li>
+</ol>
+<h5 id="examples">Examples</h5>
+<p><strong>Example 1: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --exist=data.txt</code> and <code class="java">node ./main.js --exist=fake.txt</code></em></p>
+<p><img alt="" height="121" name="image.png" src="https://ucarecdn.com/cb4266ed-7459-4123-a72c-9ad8cdd258e8/" width="724"/></p>
+<p><strong>Example 2: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --create=project_folder</code> and <code class="java">node ./main.js --create=images/first</code></em></p>
+<p><img alt="" height="126" name="image.png" src="https://ucarecdn.com/f881356c-ca27-47e9-88c8-2a45e442540e/" width="816"/></p>
+<p><strong>Example 3: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --remove=project_folder</code> and <code class="java">node ./main.js --remove=images/first</code></em></p>
+<p><img alt="" height="127" name="image.png" src="https://ucarecdn.com/d77a91d6-119e-4f8f-9bca-5f4976485b2b/" width="813"/></p>
+<p><strong>Example 4: </strong><em>example of output to the console when using the commands <code class="java">node ./main.js --remove=new_folder</code>, but <code class="java">new_folder</code> doesn't exist</em></p>
+<p><img alt="" height="65" name="image.png" src="https://ucarecdn.com/53a9508a-0f29-4f1f-acd5-08f2fae299c7/" width="752"/><em> </em></p>
+</div>
