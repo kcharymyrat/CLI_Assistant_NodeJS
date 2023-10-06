@@ -182,6 +182,72 @@ files:
       if __name__ == '__main__':
           CliTest().run_tests()
     learner_created: false
+  - name: tools/getCommandResponse.js
+    visible: true
+    text: |-
+      const { mkdir, rm, access, accessFile, rmFile,  } = require('node:fs/promises');
+      
+      
+      const isExists = async (value) => {
+          try {
+              await access(value);
+              return true
+          } catch {
+              return false
+          }
+      }
+      
+      const getCommandResponse = async (command, value) => {
+          switch (command) {
+              case '--exist':
+                  try {
+                      await access(value);
+                      console.log(`The file ${value} exists!`)
+                  } catch {
+                      console.log(`The file ${value} does not exist!`)
+                  }
+                  break;
+              case '--create':
+                  try {
+                      await mkdir(value, {recursive: true})
+                      if (value.includes("/"))  {
+                          console.log(`The folders ${value} were created!`)
+                      } else {
+                          console.log(`The folder ${value} was created!`)
+                      }
+                  } catch {
+                      console.error(`Error creating folder ${value}: ${e}`)
+                  }
+                  break;
+              case '--remove':
+                  try {
+                      if (await isExists(value)) {
+                          await rm(value, { recursive: true })
+                          if (value.includes("/")) {
+                              // console.log(value)
+                              const [parent, child] = value.split("/")
+                              console.log(`The folder ${parent} in ${child} folder was deleted!`)
+                          } else {
+                              console.log(`The folder ${value} was deleted!`)
+                          }
+                      } else {
+                          console.log(`This ${value} folder doesn't exist!`)
+                      }
+                  } catch {
+                      console.error(`Error removing folder ${value}`)
+                  }
+                  break;
+              default:
+                  console.log(`Unknown command: ${command}`);
+          }
+      }
+      
+      module.exports = getCommandResponse
+    learner_created: true
 feedback_link: https://hyperskill.org/learn/step/35499#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Well done! You've finished the project. Select a new project on <a href="https://hyperskill.org/projects">Hyperskill</a>
+    to continue learning.
+  time: "Fri, 06 Oct 2023 09:41:25 UTC"
 record: -1

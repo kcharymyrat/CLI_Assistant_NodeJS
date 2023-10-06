@@ -3,17 +3,17 @@ hyperskill_project:
   ide_files: https://cogniterra.org/media/attachments/lesson/32478/additional_files.json
   is_template_based: false
   use_ide: true
-update_date: "Fri, 06 Oct 2023 01:24:31 UTC"
+update_date: "Fri, 06 Oct 2023 06:24:39 UTC"
 stages:
   - id: 2287
     step: 35497
     is_completed: true
   - id: 2288
     step: 35498
-    is_completed: false
+    is_completed: true
   - id: 2289
     step: 35499
-    is_completed: false
+    is_completed: true
 topics:
   0:
     - title: Introduction to Node.js
